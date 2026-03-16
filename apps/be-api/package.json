@@ -6,6 +6,8 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "db:migrate": "pnpm with-env prisma migrate dev",
+    "db:generate": "pnpm with-env prisma generate",
+    "db:studio": "pnpm with-env prisma studio",
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {

@@ -1,9 +1,11 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
+import { prismaDb } from "./utils/prisma";
 
 const app = new Hono();
 
-app.get("/", (c) => {
+app.get("/", async (c) => {
+  await prismaDb.note.findFirst();
   return c.text("Hello Hono!");
 });
 
