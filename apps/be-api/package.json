@@ -8,7 +8,11 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.19.11",
-    "hono": "^4.12.8"
+    "@prisma/adapter-better-sqlite3": "^7.5.0",
+    "@prisma/client": "^7.5.0",
+    "better-sqlite3": "^12.8.0",
+    "hono": "^4.12.8",
+    "prisma": "^7.5.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
