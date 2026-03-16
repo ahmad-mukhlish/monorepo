@@ -3,6 +3,7 @@ import { Hono } from "hono";
 import { noteRouter } from "./modules/notes/router";
 
 const app = new Hono().route("/", noteRouter);
+export type BackEndType = typeof app;
 
 serve(
   {
