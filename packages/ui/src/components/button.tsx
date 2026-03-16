@@ -5,5 +5,5 @@ interface ButtonParams {
 }
 
 export const Button = ({ children }: { children: React.ReactNode }) => {
-  return <button className="bg-teal-500 p-2 rounded-lg">{children}</button>;
+  return <button className="bg-teal-500 p-2 rounded-lg text-white">{children}</button>;
 };

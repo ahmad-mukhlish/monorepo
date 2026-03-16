@@ -5,7 +5,7 @@ import { CreateNotesSchema } from "./schema";
 
 export const noteRouter = new Hono()
   .get("/", async (c) => {
-    const notes = await prismaDb.note.findMany;
+    const notes = await prismaDb.note.findMany();
 
     return c.json(notes);
   })
