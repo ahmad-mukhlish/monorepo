@@ -1,17 +1,22 @@
 {
-  "name": "monorepo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm --parallel --filter=be-api --filter=platform --filter=@ahmad-mukhlish/ui dev"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.30.1",
-  "dependencies": {
-    "dotenv-cli": "^11.0.0"
-  }
+	"name": "monorepo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "pnpm --parallel --filter=be-api --filter=platform --filter=@ahmad-mukhlish/ui dev",
+		"lint": "pnpx @biomejs/biome check",
+		"lint-fix": "pnpx @biomejs/biome check --write --unsafe"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.30.1",
+	"dependencies": {
+		"dotenv-cli": "^11.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.7"
+	}
 }

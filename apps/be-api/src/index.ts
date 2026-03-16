@@ -6,11 +6,11 @@ const app = new Hono().route("/notes", noteRouter);
 export type BackEndType = typeof app;
 
 serve(
-  {
-    fetch: app.fetch,
-    port: 8000,
-  },
-  (info) => {
-    console.log(`Server is running on http://localhost:${info.port}`);
-  },
+	{
+		fetch: app.fetch,
+		port: 8000,
+	},
+	(info) => {
+		console.log(`Server is running on http://localhost:${info.port}`);
+	},
 );
